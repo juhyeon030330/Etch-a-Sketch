@@ -1,0 +1,27 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    height: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.grid-square {
+    border: 1px solid #ddd;
+    flex: 1 0 calc(100% / var(--grid-size));
+    height: calc(100% / var(--grid-size));
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
