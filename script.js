@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => createGrid());
 const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', () => {
     const newSize = prompt("Enter new grid size (max 100):", 16);
+    if (newSize === null) {
+        return;
+    }
     const size = Math.min(Math.max(parseInt(newSize), 1), 100);
     createGrid(size);
 });
